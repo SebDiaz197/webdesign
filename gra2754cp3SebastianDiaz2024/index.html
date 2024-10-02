@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+<style>
+/*this is the global style sheet for phone moblie*/
+body {
+  background-color:#FADF1C;
+}
+wrapper{
+	width: 80%;
+	min-width: 300px;
+	max-width: 2500px;
+	display: block;
+	margin: auto;
+	background-color: #EE4347;
+	text-align: center;
+}
+h1 {
+	color: white;
+	text-align: center;
+	font-family: "Limelight", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin-top: 0px;
+}
+
+p {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 20px;
+  }
+  
+banner{
+	display: block;
+	background: yellow;
+	margin-bottom: 10px;
+}
+section{
+	
+	margin-bottom: 10px;
+	position: relative;
+}
+section button {
+	margin: auto;
+	display: block;
+	background-color: rgba(180,180,180,1.00);
+	position:absolute;
+	bottom: 20px;
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+	
+}
+section img {
+	width: 100%;
+	height: auto;
+	
+}
+wrapper banner img {
+	width: 100%;
+	height: auto;
+}
+	footer {
+		color: lightcyan;
+		padding: 20px;
+		font-size: 12px;
+	}
+  /*This is the beginging of the tablet media query*/
+@media (min-width:800px){
+
+body{
+background-color:#F179AE;
+}
+wrapper{
+padding-left:10px;
+}
+section{
+width:48%;
+display:inline-block;
+margin-right:4px;}
+banner{
+margin-right:10px;}
+	}
+/*this is the laptop media query*/
+@media (min-width:1600px){
+body{
+background-color:#40C1E1;
+}
+section{
+width:31%;
+}
+banner{
+margin-right:20px;
+}
+body wrapper div {
+	padding-top: 66px;
+	margin-top: -1px;
+}
+	
+
+}
+</style>
+</head>
+<body>
+
+<wrapper>
+<h1>Cinema Choice</h1>
+<banner><img src="Banner-movie-pattern.jpg" alt="" width="480" height="100"> Your Movies, Your Mood, Pick the Genre, We’ll Do the Rest! </banner>
+<section><img src="Action-section.jpg" alt="" width="800" height="536">
+  <button>Action</button> 
+  </section>
+<section><img src="Comedy-section.jpg" alt="" width="800" height="536">
+  <button>Comedy</button> 
+  </section>
+<section><img src="Drama-section.jpg" alt="" width="800" height="536">
+<button>Drama</button> 
+  </section>
+<section><img src="Horror-section.jpg" alt="" width="800" height="536">
+  <button>Horror</button>
+  </section>
+<section><img src="Sc-fi-section.jpg" alt="" width="800" height="536">
+  <button>Sci-Fi</button>
+  </section>
+<section><img src="Fantasy-picture-section.jpg" alt="" width="1140" height="764">
+<button>Fantasy</button>
+  </section>
+<section><img src="Rom-Com-section.jpg" alt="" width="800" height="536">
+  <button>Rom-Com</button>
+  </section>
+<section><img src="Thriller-section.jpg" alt="" width="800" height="535">
+  <button>Thriller</button>
+  </section>
+<section><img src="Animation-section.jpg" alt="" width="800" height="536">
+  <button>Animation</button>
+  </section>
+<section><img src="Documentary-section.jpg" alt="" width="800" height="535">
+  <button>Documentary</button>
+  </section>
+<section><img src="Musical-section.jpg" alt="" width="800" height="536">
+  <button>Musical</button>
+ </section>
+<section><img src="Mystery-section.jpg" alt="" width="800" height="536">
+  <button>Mystery</button>
+ </section>
+	
+	<div>
+	  <button> Order now</button>
+	  <button>Watch now</button>
+<footer>© 2024, Sebastian Diaz. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</div>
+
+</wrapper>
+</body>
+</html>
+
+
