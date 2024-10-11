@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Whispering Garden website| Sebastian Diaz 2024</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript">
+  $(document).ready(
+    function() {
+      $('#icon').click (
+        function() {
+          $('#nav').show();
+          $('#icon').hide();
+          $('#x_icon').show();
+        }
+  );
+  $('#x_icon').click (
+    function() {
+          $('#nav').hide();
+          $('#icon').show();
+          $('#x_icon').hide();
+        }
+      );
+    }
+  );
+</script>
+<style type="text/css">
+body {
+	margin: 0;
+}
+wrapper {
+	width: 100%;
+	margin: auto;
+	display: block;
+	background-image: url(blurred-background.jpg);
+	background-size: cover;
+}
+header {
+	padding: 20px;
+	background-color: #228B22;
+	color: rgba(243,255,0,1.00);
+}
+h1 {
+}
+section {
+	padding: 20px;
+}
+footer {
+	padding: 20px;
+	font-size: 12px;
+}
+#nav {
+	display: none;
+	background-color: #0f3e0f;
+}
+ul li:hover {
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+}
+ul li {
+	padding: 20px;
+	display: block;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: rgba(253,253,253,1.00);
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+section img {
+	width: 100%;
+	height: auto;
+}
+	.minor img {
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 20%;
+	height: auto;
+}
+.logo, h1 {
+	display: inline-block;
+	vertical-align: middle;
+}
+@media (min-width:1200px){
+wrapper {
+	max-width: 1200px;
+}
+
+#icon {
+	display: none;
+}
+#nav {
+	display: block;
+	background-color: #0f3e0f;
+}
+ul li {
+	display: inline-block;	
+}
+section img {
+	width: 33%;
+	height: auto;
+}
+.minor img {
+	width: 100px;
+	height: auto;
+}
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+  <header><img src="Whispering garden logo.png" alt="" width="170" height="147" class="logo">
+    <h1>The Whispering Garden</h1>
+    <div><img src="images3/menu.png" alt="Navigation icon. Click to expand navigation menu." width="46" height="46" id="icon"/> <img id="x_icon" src="images3/x.png" alt="Exit out icon. Click to close navigation menu." width="46" height="46" style="display: none;" /></div>
+  </header>
+  <nav id="nav">
+    <ul>
+      <a href="#work" id="work_link">
+        <li>Our Work</li>
+      </a> <a href="#about" id="about_link">
+          <li>About us</li>
+          </a> <a href="#contact" id="contact_link">
+            <li>Contact Us</li>
+            </a>
+    </ul>
+  </nav>
+<section id="work">
+    <h2>Our work</h2>
+    <img src="herb-garden.jpg" alt="" width="230" height="230"><img src="Nursery flowers 2.jpg" alt="" width="230" height="230"><img src="Vegetable-Gardening.png" alt="" width="230" height="230"><img src="pink-flower.jpg" alt="" width="230" height="230"><img src="fruit%20trees%20growing.jpg" alt="" width="230" height="230"><img src="water-garden-plants.jpg" alt="" width="230" height="230">
+  
+  <p>At The Whispering Garden, we grow and sell vibrant plants, fresh herbs, organic vegetables, and exotic flowers. We offer gardening tips and natural remedies using homegrown herbs to promote well-being. Whether you're a beginner or seasoned gardener, we're here to help you create a beautiful, sustainable garden.</p>
+  <button>Click here to shop</button>
+</section>
+  <section id="about">
+<h2>About us</h2>
+<img src="Flower_handle _care.jpg" alt="" width="230" height="230"><img src="Garden_handle.jpg" alt="" width="230" height="230"><img src="growing-herbs.jpg" alt="" width="230" height="230"><img src="watering-plants.jpg" alt="" width="230" height="230"><img src="planting-plants.jpg" alt="" width="230" height="230"><img src="flower-nursery-worker.jpg" alt="" width="230" height="230"> <p>The Whispering Garden is a family-run nursery offering a variety of plants, herbs, fruits, and vegetables. We’re passionate about sustainable gardening and sharing tips on natural remedies. Whether you're new or experienced, we’re here to inspire your green journey</p></section>
+  <div>
+    <button>Click here for more information</button>
+    <button>Click here for good tips to grow your plants healthier</button>
+  </div>
+  <section class="minor" id="contact">
+  <h2>
+  Contact us</h2>
+  <img src="Instagram_icon.png" alt="" width="67" height="67"><img src="Facebook_Logo_2023.png" alt="" width="67" height="67"><img src="twitter-png-icon.png" alt="" width="67" height="67"><img src="—Pngtree—whatsapp icon_8704827.png" alt="" width="67" height="67">
+  <h3>Reach us for inquiries, plant advice, or orders. We're here to help your garden grow!</h3>
+  <button>Click here to find our location</button>
+</section>
+<footer>&copy;
+	  2024, Sebastian Diaz
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
