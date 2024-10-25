@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drag and drop puzzle game | Sebastian Diaz 2024</title>
+<style type="text/css">
+body {
+	background-image: url(Sebastian-Diaz-wooden-table-background.jpg);
+	background-size: cover;
+	margin: 0;
+	background-color: #C29566;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: 0% center;
+}
+h1 {
+	text-align: center;
+	font-size: 38px;
+	color: rgba(0,0,0,1.00);
+}
+wrapper {
+	width: 1200px;
+	display: block;
+	color: #1ED8EF;
+	margin: auto;
+	background-repeat: no-repeat;
+}
+div {
+	/* [disabled]border: solid thin black; */
+	color: #FFFFFF;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin-right: -5px;
+	padding: 0;
+	margin-bottom: -5px;
+	background-color: rgba(255,255,255,0.50);
+}
+section {
+	width: 900px;
+	height: 600px;
+	display: inline-block;
+	vertical-align: top;
+}
+aside {
+	display: inline-block;
+	width: 300px;
+	height: 600px;
+	margin-right: -5px;
+	vertical-align: top;
+	border: medium solid black;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+aside img {
+	position: absolute;
+	top: 83px;
+	left: 0px;
+	width: 100%;
+	height: auto;
+}
+h2 {
+	color: #FFFFFF;
+	top: auto;
+	text-align: center;
+}
+p {
+	color: #292929;
+	margin-left: 435px;
+	font-weight: bold;
+	font-size: 25px;
+	text-shadow: 0px 0px 10px rgba(255,255,255,1.00),0px 0px 10px rgba(255,255,255,1.00),0px 0px 10px rgba(255,255,255,1.00);
+}
+div img {
+	width: 100%;
+	height: auto;
+	margin-bottom: -7px;
+}
+img {
+	display: inline-block;
+	/* [disabled]margin-left: -5px; */
+	width: 100%;
+	height: auto;
+	/* [disabled]margin-top: -7px; */
+}
+footer {
+	padding: 20px;
+	background-color: rgba(255,255,255,0.50);
+	color: rgba(0,0,0,1.00);
+}
+</style>
+</head>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+	<body>
+<wrapper>
+  <header>
+    <h1>Kaiju Rampage Puzzle</h1>
+  </header>
+
+
+  <p>(Click, drag, and drop the puzzle pieces into the panel to the right)</p>
+  <p>(If you made an error, refresh the Webpage)</p>
+<aside id="drop1" ondragover="allowDrop(event)" ondrop="drop(event)">
+  <h2>Pickup puzzle pieces<br>
+    from here</h2>
+<img src="Kaiju-puzzle-piece-2-400.png" alt="" width="400" height="400" id="drag2" draggable="true" ondragstart="drag(event)"><img src="Kaiju-puzzle-piece-5-400.png" alt="" width="400" height="400" id="drag6" draggable="true" ondragstart="drag(event)"><img src="Kaiju-puzzle-piece-3-400.png" alt="" width="400" height="400" id="drag3" draggable="true" ondragstart="drag(event)"><img src="Kaiju-puzzle-piece-1-400.png" alt="" width="400" height="400" id="drag1" draggable="true" ondragstart="drag(event)"><img src="Kaiju-puzzle-piece-6-400.png" alt="" width="400" height="400" id="drag5" draggable="true" ondragstart="drag(event)"><img src="Kaiju-puzzle-piece-4-400.png" alt="" width="400" height="400" id="drag4" draggable="true" ondragstart="drag(event)"></aside>
+<section>
+  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="drop6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</section>
+
+<footer>© 2024, Sebastian Diaz
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
