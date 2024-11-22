@@ -137,3 +137,8 @@ h1 {
 	margin-right: auto;
 	padding-bottom: 36px;
 }
+#store {
+	background-image: url(Ariana-Grande-images/Ariana-Grande-store.png);
+	background-size: cover;
+	background-position: center center;
+}
